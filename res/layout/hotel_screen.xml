@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/hotel_screen_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/hotel_screen_head" android:background="@drawable/top_bg" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/screen" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/screen_bottom_layout" android:background="@drawable/bottom_bg" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_alignParentBottom="true">
+        <Button android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/screen_sure" android:background="@drawable/bottom_btn_click_bg" android:layout_width="wrap_content" android:layout_height="43.0dip" android:layout_marginRight="6.0dip" android:text="@string/ok" android:layout_weight="1.0" />
+        <Button android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/screen_reset" android:background="@drawable/bottom_btn_click_bg" android:layout_width="wrap_content" android:layout_height="43.0dip" android:text="@string/reset" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/screen_bottom_layout" android:layout_below="@id/hotel_screen_head">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0sp" android:textColor="#ff669944" android:gravity="center_vertical" android:id="@id/screen_class_tv" android:background="@drawable/filter_title_bg" android:paddingLeft="16.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/screen_class" />
+            <com.qmango.ui.QmangoListView android:id="@id/hotel_screen_class_list" android:focusable="true" android:scrollbars="none" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/touming" android:cacheColorHint="@color/touming" android:fastScrollEnabled="true" />
+            <ImageView android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/full_line" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff669944" android:gravity="center_vertical" android:id="@id/screen_area_tv" android:background="@drawable/filter_title_bg" android:paddingLeft="16.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/screen_area" />
+            <com.qmango.ui.QmangoListView android:id="@id/hotel_screen_area_list" android:focusable="true" android:scrollbars="none" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/touming" android:cacheColorHint="@color/touming" android:fastScrollEnabled="true" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/hotel_images_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="center" android:background="@drawable/top_bg" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/hotel_images" />
+    <TextView android:textColor="@color/black" android:gravity="center" android:id="@id/no_images_tv" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/no_images" />
+    <GridView android:gravity="center" android:id="@id/hotel_image_gridview" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:horizontalSpacing="4.0dip" android:verticalSpacing="4.0dip" android:stretchMode="columnWidth" android:columnWidth="90.0dip" android:numColumns="auto_fit" />
+</LinearLayout>

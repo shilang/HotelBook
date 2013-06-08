@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/more_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="center" android:background="@drawable/top_bg" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/need_more" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/more_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip">
+        <RelativeLayout android:id="@id/about_qmango" android:background="@drawable/more_list_item_click_bg" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="46.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/about_qmango_app" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/hotellist_icon_awright" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView android:background="@color/cut_line_top" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <TextView android:background="@color/cut_line_bottom" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <RelativeLayout android:id="@id/qmango_recommend" android:background="@drawable/more_list_item_click_bg" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="46.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/qmango_recommend_apps" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/hotellist_icon_awright" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView android:background="@color/cut_line_top" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <TextView android:background="@color/cut_line_bottom" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <RelativeLayout android:id="@id/qmango_notice" android:background="@drawable/more_list_item_click_bg" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="46.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/qmango_notice" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/hotellist_icon_awright" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView android:background="@color/cut_line_top" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <TextView android:background="@color/cut_line_bottom" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <RelativeLayout android:id="@id/qmango_share" android:background="@drawable/more_list_item_click_bg" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="46.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/qmango_share" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/hotellist_icon_awright" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

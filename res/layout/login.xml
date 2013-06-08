@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/user_login_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0dip" android:textColor="#ffffffff" android:gravity="center" android:background="@drawable/top_bg" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/user_login" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:background="@drawable/action_input_bg_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="12.0dip">
+                <EditText android:textSize="16.0sp" android:gravity="left|center" android:id="@id/user_login_account" android:background="@null" android:paddingLeft="90.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:hint="@string/please_input_your_account" android:singleLine="true" android:inputType="textEmailAddress" />
+                <TextView android:textSize="18.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/user_login_account_tv" android:layout_width="90.0dip" android:layout_height="fill_parent" android:text="@string/user_account" android:layout_alignTop="@id/user_login_account" android:layout_alignBottom="@id/user_login_account" />
+                <TextView android:id="@id/user_login_cut_line_top" android:background="@color/cut_line_top" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/user_login_account_tv" />
+                <TextView android:id="@id/user_login_cut_line_bottom" android:background="@color/cut_line_bottom" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/user_login_cut_line_top" />
+                <EditText android:textSize="16.0sp" android:gravity="left|center" android:id="@id/user_login_pwd" android:background="@null" android:paddingLeft="90.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:hint="@string/please_input_your_pwd" android:password="true" android:singleLine="true" android:layout_below="@id/user_login_cut_line_bottom" />
+                <TextView android:textSize="18.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/user_login_pwd_tv" android:layout_width="90.0dip" android:layout_height="fill_parent" android:text="@string/user_password" android:layout_alignTop="@id/user_login_pwd" android:layout_alignRight="@id/user_login_account_tv" android:layout_alignBottom="@id/user_login_pwd" />
+            </RelativeLayout>
+            <Button android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/user_login_btn" android:background="@drawable/user_memeber_btn_bg" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="12.0dip" android:text="@string/login" />
+            <Button android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/user_login_non_member_order_btn" android:background="@drawable/back_to_month_background" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="12.0dip" android:text="@string/non_member_order" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

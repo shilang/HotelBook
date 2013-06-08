@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="check_in_time_item">
+        <item>07:00</item>
+        <item>08:00</item>
+        <item>09:00</item>
+        <item>10:00</item>
+        <item>11:00</item>
+        <item>12:00</item>
+        <item>13:00</item>
+        <item>14:00</item>
+        <item>15:00</item>
+        <item>16:00</item>
+        <item>17:00</item>
+        <item>18:00</item>
+        <item>19:00</item>
+        <item>20:00</item>
+        <item>21:00</item>
+        <item>22:00</item>
+        <item>23:00</item>
+        <item>24:00</item>
+    </string-array>
+    <string-array name="check_in_time_item_id">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+    </string-array>
+    <string-array name="show_text_item">
+        <item>青芒果，领先的经济类酒店在线预订平台！</item>
+        <item>青芒果首创订金预付模式，价格更低，确保到店有房！</item>
+    </string-array>
+    <string-array name="show_text_item_id">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="screen_area_item">
+        <item>全部</item>
+        <item>酒店式公寓</item>
+        <item>特色客栈</item>
+        <item>家庭旅馆</item>
+        <item>青年旅舍</item>
+    </string-array>
+    <string-array name="screen_area_item_id">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="map_around_item">
+        <item>美食</item>
+        <item>景点</item>
+        <item>娱乐</item>
+        <item>车站</item>
+    </string-array>
+    <string-array name="map_around_item_id">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="sort_item">
+        <item>价格从低到高</item>
+        <item>评分从高到低</item>
+        <item>距离由近到远</item>
+    </string-array>
+    <string-array name="sort_item_id">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="bank_item">
+        <item>中国银行</item>
+        <item>招商银行</item>
+        <item>交通银行</item>
+        <item>其他银行</item>
+        <item>中国工商银行</item>
+        <item>中国农业银行</item>
+        <item>中国建设银行</item>
+    </string-array>
+    <string-array name="bank_item_id">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+    <string-array name="orders_screen_item">
+        <item>全部订单</item>
+        <item>已确认</item>
+        <item>待确认</item>
+        <item>待付款</item>
+        <item>已取消</item>
+    </string-array>
+    <string-array name="orders_screen_item_id">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+</resources>

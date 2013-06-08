@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/order_details_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="center" android:background="@drawable/top_bg" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/hotel_order_details" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/order_details_head_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="6.0dip">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/order_number_text" />
+                        <TextView android:textSize="13.0sp" android:textColor="#ff555555" android:id="@id/order_details_order_num" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/order_status" />
+                        <TextView android:textSize="13.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/order_details_order_status" android:layout_width="58.0dip" android:layout_height="24.0dip" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/prepaid_deposit" />
+                        <TextView android:textSize="13.0sp" android:textColor="@color/yellow" android:id="@id/order_details_order_deposit" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_at_hotel" />
+                        <TextView android:textSize="13.0sp" android:textColor="@color/yellow" android:id="@id/order_details_order_pay_at_hotel" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/order_details_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/book_hotel_name" />
+                    <TextView android:textSize="13.0sp" android:textColor="#ff555555" android:id="@id/order_details_hotel_name" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/book_hotel_room" />
+                    <TextView android:textSize="13.0sp" android:textColor="#ff555555" android:id="@id/order_details_hotel_room" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/book_hotel_date" />
+                    <TextView android:textSize="13.0sp" android:textColor="#ff555555" android:id="@id/order_details_hotel_date" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/book_hotel_address" />
+                    <TextView android:textSize="13.0sp" android:textColor="#ff555555" android:id="@id/order_details_hotel_address" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/order_details_hotel_contact_phone_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/book_hotel_contact_phone" />
+                    <TextView android:textSize="13.0sp" android:textColor="#ff555555" android:id="@id/order_details_hotel_contact_phone" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/order_details_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="6.0dip">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/check_in_people_name_text" />
+                    <TextView android:textSize="13.0sp" android:textColor="#ff555555" android:id="@id/order_details_check_in_name" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/check_in_people_sex_text" />
+                    <TextView android:textSize="13.0sp" android:textColor="#ff555555" android:id="@id/order_details_check_gender" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/check_in_time_text" />
+                    <TextView android:textSize="13.0sp" android:textColor="#ff555555" android:id="@id/order_details_check_time" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/check_in_people_phone_text" />
+                    <TextView android:textSize="13.0sp" android:textColor="#ff555555" android:id="@id/order_details_check_phone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <Button android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/order_comments_btn" android:background="@drawable/user_memeber_btn_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="6.0dip" android:text="@string/comment_on_win_prize" />
+            <Button android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/order_again_btn" android:background="@drawable/user_memeber_btn_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="6.0dip" android:text="@string/book_hotel_again" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

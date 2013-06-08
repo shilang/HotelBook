@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:background="@color/touming" android:layout_width="fill_parent" android:layout_height="6.0dip" />
+    <RelativeLayout android:background="@drawable/hotel_list_item_click_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/click_tip_icon" android:paddingLeft="16.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/hotellist_icon_awright" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/hotel_main_image" android:layout_width="75.0dip" android:layout_height="fill_parent" android:layout_marginLeft="4.0dip" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" android:src="@drawable/default_image_background" android:minHeight="55.0dip" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/black" android:id="@id/hotel_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:singleLine="true" android:layout_toLeftOf="@id/click_tip_icon" android:layout_toRightOf="@id/hotel_main_image" />
+        <ImageView android:id="@id/hotel_grade" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_below="@id/hotel_name" android:layout_alignLeft="@id/hotel_name" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:id="@id/hotel_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_below="@id/hotel_grade" android:layout_alignLeft="@id/hotel_name" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/grayblack" android:id="@id/hotel_distance" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/hotel_area" android:layout_below="@id/hotel_grade" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/yellow" android:id="@id/hotel_low_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/click_tip_icon" android:layout_below="@id/hotel_name" />
+    </RelativeLayout>
+</LinearLayout>

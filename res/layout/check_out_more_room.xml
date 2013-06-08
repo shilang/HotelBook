@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/check_out_more_rooms_tv" android:layout_width="fill_parent" android:layout_height="60.0dip" android:text="@string/check_out_all_room" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/pack_up_some_rooms_tv" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="60.0dip" android:text="@string/pack_up_some_room" />
+</RelativeLayout>

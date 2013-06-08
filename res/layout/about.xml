@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/about_layout" android:background="#ffedecea" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/about_head_tv" android:background="@drawable/top_bg" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/about_qmango_app" />
+    <TextView android:textSize="16.0sp" android:textColor="#ff777777" android:gravity="center" android:id="@id/about_bottom_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="50.0dip" android:text="@string/about_qmango_intruduction" android:layout_alignParentBottom="true" />
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/about_bottom_tv" android:layout_below="@id/about_head_tv">
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/about_img" />
+    </LinearLayout>
+</RelativeLayout>

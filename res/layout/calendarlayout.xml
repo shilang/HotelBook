@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/calendar_title" android:background="@drawable/top_bg" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/calendar_type" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <ScrollView android:id="@id/calendar_scroll_layout" android:background="@color/body_background" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:orientation="vertical" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/calendar_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/pre_month" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/dateselect_btn_left" android:layout_weight="1.0" />
+                    <TextView android:textSize="18.0sp" android:textColor="@android:color/black" android:gravity="center" android:id="@id/month_title" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/next_month" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:src="@drawable/dateselect_btn_right" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="12.0sp" android:textColor="@android:color/black" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/Sunday" android:layout_weight="1.0" />
+                    <TextView android:textSize="12.0sp" android:textColor="@android:color/black" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/Monday" android:layout_weight="1.0" />
+                    <TextView android:textSize="12.0sp" android:textColor="@android:color/black" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/Tuesday" android:layout_weight="1.0" />
+                    <TextView android:textSize="12.0sp" android:textColor="@android:color/black" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/Wednesday" android:layout_weight="1.0" />
+                    <TextView android:textSize="12.0sp" android:textColor="@android:color/black" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/Thursday" android:layout_weight="1.0" />
+                    <TextView android:textSize="12.0sp" android:textColor="@android:color/black" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/Friday" android:layout_weight="1.0" />
+                    <TextView android:textSize="12.0sp" android:textColor="@android:color/black" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/Saturday" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/today" android:background="@drawable/back_to_month_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="13.0dip" android:layout_below="@id/calendar_layout" android:layout_centerInParent="true">
+                <TextView android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/back_to_this_month" />
+            </LinearLayout>
+            <TextView android:textSize="14.0sp" android:textColor="#ffaeaeae" android:id="@id/calendarTips" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:text="@string/booking_date_got_pushed_back_a_day" android:layout_below="@id/today" />
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/login_and_membercenter_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/login_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="20.0dip" android:textColor="#ffffffff" android:gravity="center" android:background="@drawable/top_bg" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/user_login" />
+        <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:background="@drawable/action_input_bg_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="12.0dip">
+                    <EditText android:textSize="16.0sp" android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/input_user_account" android:background="@null" android:paddingLeft="90.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:hint="@string/please_input_your_account" android:singleLine="true" android:inputType="textEmailAddress" />
+                    <TextView android:textSize="18.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/user_account" android:layout_width="90.0dip" android:layout_height="fill_parent" android:text="@string/user_account" android:layout_alignTop="@id/input_user_account" android:layout_alignBottom="@id/input_user_account" />
+                    <TextView android:id="@id/login_cut_line_top" android:background="@color/cut_line_top" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/input_user_account" />
+                    <TextView android:id="@id/login_cut_line_bottom" android:background="@color/cut_line_bottom" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/login_cut_line_top" />
+                    <EditText android:textSize="16.0sp" android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/input_user_pwd" android:background="@null" android:paddingLeft="90.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:hint="@string/please_input_your_pwd" android:password="true" android:singleLine="true" android:layout_below="@id/login_cut_line_bottom" />
+                    <TextView android:textSize="18.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/user_password" android:layout_width="90.0dip" android:layout_height="fill_parent" android:text="@string/user_password" android:layout_alignTop="@id/input_user_pwd" android:layout_alignRight="@id/user_account" android:layout_alignBottom="@id/input_user_pwd" />
+                </RelativeLayout>
+                <RelativeLayout android:orientation="horizontal" android:id="@id/login_auto_layout" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="25.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="#ff555555" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:text="@string/remember_pwd" android:layout_alignParentTop="true" />
+                    <ImageView android:id="@id/login_auto" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:src="@drawable/switch_sign_open" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <Button android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/login" android:background="@drawable/user_memeber_btn_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="12.0dip" android:text="@string/login" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="#ff84ae66" android:gravity="left" android:id="@id/register" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/register_now" android:layout_weight="1.0" />
+                    <TextView android:textSize="16.0sp" android:textColor="#ff84ae66" android:gravity="right" android:id="@id/forgot_pwd" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/forgot_password" android:layout_weight="1.0" />
+                </LinearLayout>
+                <TextView android:textSize="14.0sp" android:textColor="#ff999999" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="12.0dip" android:text="@string/register_preferential" />
+                <Button android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/non_member_order_inquires" android:background="@drawable/back_to_month_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="36.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="12.0dip" android:text="@string/non_member_order_inquires" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/member_center_layout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:background="@drawable/top_bg" android:layout_width="fill_parent" android:layout_height="48.0dip">
+            <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/qmango_member_center" android:layout_centerInParent="true" />
+            <Button android:textSize="12.0sp" android:textColor="#ffffffff" android:id="@id/loginout_btn" android:background="@drawable/search_nearby_hotels_bg" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="7.0dip" android:layout_marginRight="13.0dip" android:layout_marginBottom="7.0dip" android:text="@string/loginout" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/member_center_top_layout" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dip" />
+                <TextView android:textSize="16.0sp" android:textColor="#ff555555" android:id="@id/user_restcard" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" />
+                <TextView android:textSize="16.0sp" android:textColor="#ff555555" android:id="@id/user_phone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" />
+            </LinearLayout>
+            <Button android:id="@id/update_user_info" android:background="@drawable/update_user_info_bg" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_margin="20.0dip" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/user_fund_info_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="6.0dip">
+            <LinearLayout android:orientation="horizontal" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <RelativeLayout android:id="@id/user_funds_layout" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/user_funds_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_funds" android:layout_alignParentLeft="true" />
+                    <ImageView android:id="@id/user_funds_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/hotellist_icon_awright" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/yellow" android:gravity="center" android:id="@id/user_funds_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/user_funds_icon" android:layout_toRightOf="@id/user_funds_txt" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/user_red_envelopes_layout" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/user_red_envelopes_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_red_packet" android:layout_alignParentLeft="true" />
+                    <ImageView android:id="@id/user_red_envelopes_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/hotellist_icon_awright" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/yellow" android:gravity="center" android:id="@id/user_red_envelopes_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/user_red_envelopes_icon" android:layout_toRightOf="@id/user_red_envelopes_txt" />
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView android:background="@color/cut_line_top" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <TextView android:background="@color/cut_line_bottom" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:orientation="horizontal" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <RelativeLayout android:id="@id/user_bonus_layout" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/user_bonus_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_bonus" android:layout_alignParentLeft="true" />
+                    <ImageView android:id="@id/user_bonus_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/hotellist_icon_awright" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/yellow" android:gravity="center" android:id="@id/user_bonus_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/user_bonus_icon" android:layout_toRightOf="@id/user_bonus_txt" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/user_coupons_layout" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/user_coupons_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_coupons" android:layout_alignParentLeft="true" />
+                    <ImageView android:id="@id/user_coupons_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/hotellist_icon_awright" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/yellow" android:gravity="center" android:id="@id/user_coupons_num" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="-16.0dip" android:text="@string/activition" android:layout_toLeftOf="@id/user_coupons_icon" android:layout_toRightOf="@id/user_coupons_txt" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/user_order_management" android:background="@drawable/user_memeber_btn_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="6.0dip" android:text="@string/order_inquires" />
+    </LinearLayout>
+</FrameLayout>

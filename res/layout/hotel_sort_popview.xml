@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/body_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textSize="18.0dip" android:textColor="@color/black" android:gravity="center" android:id="@id/sort_by_price" android:background="@drawable/sort_list_background" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/sort_by_price" />
+    <Button android:textSize="18.0dip" android:textColor="@color/black" android:gravity="center" android:id="@id/sort_by_grade" android:background="@drawable/sort_list_background" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/sort_by_grade" android:layout_below="@id/sort_by_price" />
+    <Button android:textSize="18.0dip" android:textColor="@color/black" android:gravity="center" android:id="@id/sort_by_distance" android:background="@drawable/sort_list_background" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/sort_by_distance" android:layout_below="@id/sort_by_grade" />
+</RelativeLayout>

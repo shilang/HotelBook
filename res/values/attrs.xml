@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="textColor" format="color" />
+    <attr name="textSize" format="dimension" />
+    <attr name="imgBackground" format="integer" />
+    <attr name="textPaddingLeft" format="dimension" />
+    <attr name="textPaddingTop" format="dimension" />
+    <attr name="bartitle" format="string" />
+    <attr name="barvalue" format="string" />
+    <attr name="arrowType" format="integer" />
+    <attr name="bgType" format="integer" />
+    <attr name="mBarValue" format="string" />
+    <attr name="mIcon" format="integer" />
+    <attr name="mArrowType" format="integer" />
+    <attr name="mBgType" format="integer" />
+    <attr name="arrayId" format="integer" />
+    <attr name="selectedPosition" format="integer" />
+    <attr name="editbartitle" format="string" />
+    <attr name="editbarvalue" format="string" />
+    <attr name="editbgType" format="integer" />
+    <attr name="entries" format="reference" />
+    <attr name="entryValues" format="reference" />
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/body_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:mui="http://schemas.android.com/apk/res/com.qmango.activity">
+    <TextView android:textSize="22.0dip" android:textColor="#ffffffff" android:gravity="center" android:background="@drawable/top_bg" android:layout_width="fill_parent" android:layout_height="47.0dip" android:text="@string/checkin_time_late" />
+    <ListView android:id="@id/check_in_time_list" android:focusable="true" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/touming" android:cacheColorHint="@color/touming" android:fastScrollEnabled="true" />
+</LinearLayout>

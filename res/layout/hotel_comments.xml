@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/hotel_comments_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="center" android:background="@drawable/top_bg" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/hotel_comment" />
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:textColor="@color/black" android:gravity="center" android:id="@id/no_comments_tv" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/is_null" />
+    <ListView android:id="@id/hotel_comments_list" android:scrollbars="none" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/touming" android:cacheColorHint="@color/touming" />
+</LinearLayout>
